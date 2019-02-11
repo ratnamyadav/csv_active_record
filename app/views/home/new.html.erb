@@ -1,0 +1,12 @@
+<h3>Upload CSVs</h3>
+<%= form_tag upload_csv_files_path, multipart: true do %>
+  <div>
+    <label>School Registration CSV</label>
+    <%= file_field_tag :school_registrations_csv %>
+  </div>
+  <div>
+    <label>User CSV</label>
+    <%= file_field_tag :users_csv %>
+  </div>
+  <%= submit_tag %>
+<% end %>

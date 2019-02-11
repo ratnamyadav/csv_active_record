@@ -1,0 +1,25 @@
+
+<h3>CSVs </h3>
+<%= link_to 'Add', new_csv_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>School Registrations CSV url</th>
+      <th>Users CSV url</th>
+      <th>Import</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @csvs.each do |csv| %>
+    <tr>
+      <td><%= csv.id %></td>
+      <td><%= link_to csv.school_registrations_csv.url, csv.school_registrations_csv.url %></td>
+      <td><%= link_to csv.users_csv.url, csv.users_csv.url %></td>
+      <td>
+        <%= link_to  'Click here', import_to_active_record_path(id: csv.id), method: :post %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

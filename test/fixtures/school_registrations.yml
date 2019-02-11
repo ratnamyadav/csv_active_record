@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school: MyString
+  english: false
+  geography: false
+  spanish: false
+
+two:
+  school: MyString
+  english: false
+  geography: false
+  spanish: false

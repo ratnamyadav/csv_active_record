@@ -1,0 +1,14 @@
+Errors:
+<% @errors.each_with_index do |error, index| %>
+  <%= index + 1 %>. <%= error %>
+<% end %>
+
+Stats:
+  Number of users before import: <%= @user_before_import %>
+  Number of users after import: <%= @user_after_import %>
+  Number of users imported: <%= @no_of_users_imported %>
+  Number of users NOT imported <%= @total_csv_records_user - @no_of_users_imported %>
+  Number of class registrations before import: <%= @school_registration_before_import %>
+  Number of class registrations after import: <%= @school_registration_after_import %>
+  Number of class registrations imported : <%= @no_of_school_registration_imported %>
+  Number of class registrations NOT imported: <%= @total_csv_records_school_registration - @no_of_school_registration_imported %>
