@@ -1,10 +1,10 @@
 Paperclip::Attachment.default_options.merge!({
                                                  :storage => :s3,
                                                  :s3_credentials => {
-                                                     :bucket => "csvupload1992",
-                                                     :access_key_id => "AKIAIG4CEJOPCPSCBQXQ",
-                                                     :secret_access_key => "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",
-                                                     :s3_region => 'ap-south-1'
+                                                     :bucket => "your_bucket",
+                                                     :access_key_id => "access_id",
+                                                     :secret_access_key => "secret_key",
+                                                     :s3_region => 'region'
                                                  },
                                                  :bucket => "csvupload1992",
                                                  :url => ":s3_domain_url",
